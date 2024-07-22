@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<style>
+    body {
+        background-color: cadetblue;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        max-width: 500px;
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+        background-color: white;
+        padding: 1em 2em;
+        margin: auto;
+        text-align: center;
+    }   
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5em;
+    }
+
+    button {
+        padding: 0.5em 1em;
+        font-size: 0.7em;
+        border: 0;
+        outline: 0;
+        background-color: rgb(45, 73, 74);
+        color: white;
+        margin: 10px;
+    }
+
+    button:disabled {
+        background-color: rgb(64, 104, 105);
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    button:hover {
+        cursor: pointer;
+        outline: 1px solid rgb(33, 33, 33);
+    }
+</style>
+<body>
+   <main class="container">
+    <p id="relogio">00:00:00</p>
+    <br>
+    <button onclick="inicio()" id="iniciar-btn">Iniciar</button>
+    <button onclick="pausar()" id="pausar-btn">Pausar</button>
+    <button onclick="zerar()" id="zerar-btn">Zerar</button>
+   </main> 
+
+   <script src="script.js"></script>
+</body>
+</html>
